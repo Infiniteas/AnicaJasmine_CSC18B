@@ -1,5 +1,5 @@
 /*
- * File: Assignment_1
+ * File: Review
  * //////////////////////////////
  * Programmer: Jasmine Anica
  * //////////////////////////////
@@ -16,7 +16,7 @@ import java.util.Scanner;
  *
  * @author Jasmine
  */
-public class Assignment1 {
+public class Review {
 
     /**
      * @param args
