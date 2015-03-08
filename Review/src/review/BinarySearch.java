@@ -1,5 +1,5 @@
 
-package assignment1;
+package review;
 
 /*
  * Finds a variable in array using a binary search

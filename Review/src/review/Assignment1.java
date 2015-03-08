@@ -8,7 +8,7 @@
  * Date: 2/26/2015
  *
  */
-package assignment1;
+package review;
 
 import java.util.Scanner;
 
@@ -44,6 +44,14 @@ public class Assignment1 {
         
         //binary search is used to find a variable in an array
         search.sortedBinarySearch(find, 0, size); 
+        
+        //polymorphism
+        BaseSort poly = new BinarySearch(size);
+        
+        poly.fillArray();
+        poly.sortArray();
+        
+        
     }
     
 }
