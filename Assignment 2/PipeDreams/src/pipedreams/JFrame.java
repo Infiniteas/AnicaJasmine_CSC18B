@@ -70,6 +70,7 @@ public class JFrame extends javax.swing.JFrame {
         E4 = new javax.swing.JLabel();
         E5 = new javax.swing.JLabel();
         E6 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -194,10 +195,10 @@ public class JFrame extends javax.swing.JFrame {
         jCoverPane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         A1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Cover_100x100.png"))); // NOI18N
-        jCoverPane.add(A1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, -1, -1));
+        jCoverPane.add(A1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         A2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Cover_100x100.png"))); // NOI18N
-        jCoverPane.add(A2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jCoverPane.add(A2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, -1, -1));
 
         A3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Cover_100x100.png"))); // NOI18N
         A3.setToolTipText("");
@@ -284,11 +285,21 @@ public class JFrame extends javax.swing.JFrame {
         E6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Cover_100x100.png"))); // NOI18N
         jCoverPane.add(E6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 400, -1, -1));
 
+        jButton1.setText("Back");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPipeDreamsLayout = new javax.swing.GroupLayout(jPipeDreams);
         jPipeDreams.setLayout(jPipeDreamsLayout);
         jPipeDreamsLayout.setHorizontalGroup(
             jPipeDreamsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPipeDreamsLayout.createSequentialGroup()
+                .addContainerGap(873, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(68, 68, 68))
             .addGroup(jPipeDreamsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPipeDreamsLayout.createSequentialGroup()
                     .addContainerGap(187, Short.MAX_VALUE)
@@ -297,7 +308,10 @@ public class JFrame extends javax.swing.JFrame {
         );
         jPipeDreamsLayout.setVerticalGroup(
             jPipeDreamsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPipeDreamsLayout.createSequentialGroup()
+                .addContainerGap(719, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(56, 56, 56))
             .addGroup(jPipeDreamsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPipeDreamsLayout.createSequentialGroup()
                     .addContainerGap(147, Short.MAX_VALUE)
@@ -305,6 +319,7 @@ public class JFrame extends javax.swing.JFrame {
                     .addContainerGap(153, Short.MAX_VALUE)))
         );
         jPipeDreams.setLayer(jCoverPane, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPipeDreams.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout BackgroundLayout = new javax.swing.GroupLayout(Background);
         Background.setLayout(BackgroundLayout);
@@ -377,6 +392,12 @@ public class JFrame extends javax.swing.JFrame {
         jIntroMenu.setVisible(false);
     }//GEN-LAST:event_StartMouseClicked
 
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+        jPipeDreams.setVisible(false);
+        jIntroMenu.setVisible(true);
+    }//GEN-LAST:event_jButton1MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -442,6 +463,7 @@ public class JFrame extends javax.swing.JFrame {
     private javax.swing.JLabel E6;
     private javax.swing.JButton Rules;
     private javax.swing.JButton Start;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLayeredPane jCoverPane;
     private javax.swing.JLayeredPane jIntroMenu;
     private javax.swing.JLabel jLabel1;
