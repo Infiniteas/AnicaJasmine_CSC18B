@@ -70,6 +70,12 @@ public class JFrame extends javax.swing.JFrame {
         E4 = new javax.swing.JLabel();
         E5 = new javax.swing.JLabel();
         E6 = new javax.swing.JLabel();
+        F1 = new javax.swing.JLabel();
+        F2 = new javax.swing.JLabel();
+        F3 = new javax.swing.JLabel();
+        F4 = new javax.swing.JLabel();
+        F5 = new javax.swing.JLabel();
+        F6 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -285,6 +291,24 @@ public class JFrame extends javax.swing.JFrame {
         E6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Cover_100x100.png"))); // NOI18N
         jCoverPane.add(E6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 400, -1, -1));
 
+        F1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Cover_100x100.png"))); // NOI18N
+        jCoverPane.add(F1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 500, -1, -1));
+
+        F2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Cover_100x100.png"))); // NOI18N
+        jCoverPane.add(F2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 500, -1, -1));
+
+        F3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Cover_100x100.png"))); // NOI18N
+        jCoverPane.add(F3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 500, -1, -1));
+
+        F4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Cover_100x100.png"))); // NOI18N
+        jCoverPane.add(F4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 500, -1, -1));
+
+        F5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Cover_100x100.png"))); // NOI18N
+        jCoverPane.add(F5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 500, -1, -1));
+
+        F6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Cover_100x100.png"))); // NOI18N
+        jCoverPane.add(F6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 500, -1, -1));
+
         jButton1.setText("Back");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -461,6 +485,12 @@ public class JFrame extends javax.swing.JFrame {
     private javax.swing.JLabel E4;
     private javax.swing.JLabel E5;
     private javax.swing.JLabel E6;
+    private javax.swing.JLabel F1;
+    private javax.swing.JLabel F2;
+    private javax.swing.JLabel F3;
+    private javax.swing.JLabel F4;
+    private javax.swing.JLabel F5;
+    private javax.swing.JLabel F6;
     private javax.swing.JButton Rules;
     private javax.swing.JButton Start;
     private javax.swing.JButton jButton1;
