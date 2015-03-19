@@ -5,10 +5,6 @@
  */
 package pipedreams;
 
-import com.sun.glass.events.KeyEvent;
-import javax.swing.border.Border;
-import javax.swing.border.LineBorder;
-
 /**
  *
  * @author Jasmine
@@ -42,16 +38,6 @@ public class JFrame extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         Back = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         jPipeDreams = new javax.swing.JLayeredPane();
         jCoverPane = new javax.swing.JLayeredPane();
         A1 = new javax.swing.JLabel();
@@ -137,25 +123,19 @@ public class JFrame extends javax.swing.JFrame {
 
         jRulesPane.setVisible(false);
         jRulesPane.setPreferredSize(new java.awt.Dimension(1000, 800));
-        jRulesPane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        rulesLabel.setFont(new java.awt.Font("Traditional Arabic", 1, 48)); // NOI18N
-        rulesLabel.setText("How to Play!");
-        jRulesPane.add(rulesLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, -1, -1));
+        rulesLabel.setFont(new java.awt.Font("Traditional Arabic", 1, 24)); // NOI18N
+        rulesLabel.setText("Rules");
 
         revealLabel.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
         revealLabel.setText("Reveal the tiles");
-        jRulesPane.add(revealLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jasmine\\Documents\\PipeDreams\\Resized Tiles\\Cover_100x100.png")); // NOI18N
-        jRulesPane.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 232, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Tile_4_100x100.png"))); // NOI18N
-        jRulesPane.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 232, -1, -1));
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jasmine\\Documents\\PipeDreams\\Resized Tiles\\Tile_4_100x100.png")); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Traditional Arabic", 0, 18)); // NOI18N
-        jLabel3.setText("Swap tiles to connect pipes");
-        jRulesPane.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 360, -1, -1));
+        jLabel3.setText("Press Enter to reveal pipes");
 
         Back.setText("Back");
         Back.setToolTipText("Back");
@@ -164,48 +144,60 @@ public class JFrame extends javax.swing.JFrame {
                 BackMouseClicked(evt);
             }
         });
-        jRulesPane.add(Back, new org.netbeans.lib.awtextra.AbsoluteConstraints(883, 711, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
-        jLabel4.setText("Guide the liquid to the Exit pipe!");
-        jRulesPane.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 470, -1, 50));
-        jRulesPane.add(filler1, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 384, -1, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Tile_2_100x100.png"))); // NOI18N
-        jRulesPane.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 230, -1, -1));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Tile_6_100x100.png"))); // NOI18N
-        jRulesPane.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 230, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("Traditional Arabic", 0, 18)); // NOI18N
-        jLabel7.setText("Press Enter to reveal pipes");
-        jRulesPane.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 360, -1, -1));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Tile_10_100x100.png"))); // NOI18N
-        jRulesPane.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 520, -1, -1));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Tile_7_100x100.png"))); // NOI18N
-        jRulesPane.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 520, -1, -1));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Tile_8_100x100.png"))); // NOI18N
-        jRulesPane.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 620, -1, -1));
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Tile_12_100x100.png"))); // NOI18N
-        jRulesPane.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 520, -1, -1));
-
-        jLabel12.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
-        jLabel12.setText("Swap the tiles");
-        jRulesPane.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 190, -1, -1));
+        javax.swing.GroupLayout jRulesPaneLayout = new javax.swing.GroupLayout(jRulesPane);
+        jRulesPane.setLayout(jRulesPaneLayout);
+        jRulesPaneLayout.setHorizontalGroup(
+            jRulesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jRulesPaneLayout.createSequentialGroup()
+                .addGroup(jRulesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jRulesPaneLayout.createSequentialGroup()
+                        .addGap(450, 450, 450)
+                        .addComponent(rulesLabel))
+                    .addGroup(jRulesPaneLayout.createSequentialGroup()
+                        .addGap(68, 68, 68)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(39, 39, 39)
+                        .addComponent(jLabel2))
+                    .addGroup(jRulesPaneLayout.createSequentialGroup()
+                        .addGap(133, 133, 133)
+                        .addComponent(revealLabel))
+                    .addGroup(jRulesPaneLayout.createSequentialGroup()
+                        .addGap(97, 97, 97)
+                        .addComponent(jLabel3)))
+                .addContainerGap(489, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jRulesPaneLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Back)
+                .addGap(34, 34, 34))
+        );
+        jRulesPaneLayout.setVerticalGroup(
+            jRulesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jRulesPaneLayout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addComponent(rulesLabel)
+                .addGap(61, 61, 61)
+                .addComponent(revealLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jRulesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 394, Short.MAX_VALUE)
+                .addComponent(Back)
+                .addGap(38, 38, 38))
+        );
+        jRulesPane.setLayer(rulesLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jRulesPane.setLayer(revealLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jRulesPane.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jRulesPane.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jRulesPane.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jRulesPane.setLayer(Back, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jPipeDreams.setVisible(false);
         jPipeDreams.setPreferredSize(new java.awt.Dimension(1000, 800));
 
-        jCoverPane.setFocusable(true);
-        jCoverPane.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                jCoverPaneKeyTyped(evt);
-            }
-        });
         jCoverPane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         A1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipedreams/Cover_100x100.png"))); // NOI18N
@@ -412,6 +404,12 @@ public class JFrame extends javax.swing.JFrame {
         jIntroMenu.setVisible(false);
     }//GEN-LAST:event_RulesMouseClicked
 
+    private void BackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackMouseClicked
+        // TODO add your handling code here:
+        jRulesPane.setVisible(false);
+        jIntroMenu.setVisible(true);
+    }//GEN-LAST:event_BackMouseClicked
+
     private void StartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_StartMouseClicked
         // TODO add your handling code here:
         jPipeDreams.setVisible(true);
@@ -423,21 +421,6 @@ public class JFrame extends javax.swing.JFrame {
         jPipeDreams.setVisible(false);
         jIntroMenu.setVisible(true);
     }//GEN-LAST:event_jButton1MouseClicked
-
-    private void BackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackMouseClicked
-        // TODO add your handling code here:
-        jRulesPane.setVisible(false);
-        jIntroMenu.setVisible(true);
-    }//GEN-LAST:event_BackMouseClicked
-
-    private void jCoverPaneKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jCoverPaneKeyTyped
-        // TODO add your handling code here:
-        char c = evt.getKeyChar();
-            if(!(Character.isDigit(c))){
-                A1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 0), 3));
-            }
-            
-    }//GEN-LAST:event_jCoverPaneKeyTyped
 
     /**
      * @param args the command line arguments
@@ -510,22 +493,12 @@ public class JFrame extends javax.swing.JFrame {
     private javax.swing.JLabel F6;
     private javax.swing.JButton Rules;
     private javax.swing.JButton Start;
-    private javax.swing.Box.Filler filler1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLayeredPane jCoverPane;
     private javax.swing.JLayeredPane jIntroMenu;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JLayeredPane jPipeDreams;
     private javax.swing.JLayeredPane jRulesPane;
     private javax.swing.JLabel revealLabel;
