@@ -60,7 +60,9 @@ public class Liquid {
     int[] yCoordinates = new int[36];
     char[] tileType = new char[36];
     
-    //determines the direction of the liquid flow
+    
+    
+    //determines    Restart_Again win = new Restart_Again(); the direction of the liquid flow
     private enum Direction {
         LEFT,
         RIGHT,
@@ -1048,6 +1050,8 @@ public class Liquid {
                                tileAnimation = false;
                                endAnimation = true;
                                reset = true;
+                               Restart_Again win = new Restart_Again();
+                               currentGame.stop();
                             } else {
                                 Retry tryAgain = new Retry();
                                 currentGame.stop();
@@ -1060,6 +1064,8 @@ public class Liquid {
                                tileAnimation = false;
                                endAnimation = true;
                                reset = true;
+                               Restart_Again win = new Restart_Again();
+                               currentGame.stop();
                             } else {
                                 Retry tryAgain = new Retry();
                                 currentGame.stop();
@@ -1074,6 +1080,8 @@ public class Liquid {
                                tileAnimation = false;
                                endAnimation = true;
                                reset = true;
+                               Restart_Again win = new Restart_Again();
+                               currentGame.stop();
                             } else {
                                 Retry tryAgain = new Retry();
                                 currentGame.stop();
@@ -1085,6 +1093,8 @@ public class Liquid {
                                tileAnimation = false;
                                endAnimation = true;
                                reset = true;
+                               Restart_Again win = new Restart_Again();
+                               currentGame.stop();
                             } else {
                                 Retry tryAgain = new Retry();
                                 currentGame.stop();
@@ -1098,6 +1108,8 @@ public class Liquid {
                                tileAnimation = false;
                                endAnimation = true;
                                reset = true;
+                               Restart_Again win = new Restart_Again();
+                               currentGame.stop();
                             } else {
                                 Retry tryAgain = new Retry();
                                 currentGame.stop();
@@ -1109,6 +1121,8 @@ public class Liquid {
                                tileAnimation = false;
                                endAnimation = true;
                                reset = true;
+                               Restart_Again win = new Restart_Again();
+                               currentGame.stop();
                             } else {
                                 Retry tryAgain = new Retry();
                                 currentGame.stop();
@@ -1123,6 +1137,8 @@ public class Liquid {
                                tileAnimation = false;
                                endAnimation = true;
                                reset = true;
+                               Restart_Again win = new Restart_Again();
+                               currentGame.stop();
                             } else {
                                 Retry tryAgain = new Retry();
                                 currentGame.stop();
@@ -1136,6 +1152,8 @@ public class Liquid {
                                tileAnimation = false;
                                endAnimation = true;
                                reset = true;
+                               Restart_Again win = new Restart_Again();
+                               currentGame.stop();
                             } else {
                                 Retry tryAgain = new Retry();
                                 currentGame.stop();
@@ -1151,6 +1169,8 @@ public class Liquid {
                                tileAnimation = false;
                                endAnimation = true;
                                reset = true;
+                               Restart_Again win = new Restart_Again();
+                               currentGame.stop();
                             } else {
                                 Retry tryAgain = new Retry();
                                 currentGame.stop();
@@ -1163,6 +1183,8 @@ public class Liquid {
                                tileAnimation = false;
                                endAnimation = true;
                                reset = true;
+                               Restart_Again win = new Restart_Again();
+                               currentGame.stop();
                             } else {
                                 Retry tryAgain = new Retry();
                                 currentGame.stop();
@@ -1177,6 +1199,8 @@ public class Liquid {
                                tileAnimation = false;
                                endAnimation = true;
                                reset = true;
+                               Restart_Again win = new Restart_Again();
+                               currentGame.stop();
                             } else {
                                 Retry tryAgain = new Retry();
                                 currentGame.stop();
@@ -1188,6 +1212,8 @@ public class Liquid {
                                tileAnimation = false;
                                endAnimation = true;
                                reset = true;
+                               Restart_Again win = new Restart_Again();
+                               currentGame.stop();
                             } else {
                                 Retry tryAgain = new Retry();
                                 currentGame.stop();
